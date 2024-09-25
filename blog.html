@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+
+  <!-- Lexend Google fonts link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS link -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          lexend: "Lexend, sans-serif",
+        },
+        extend: {
+          colors: {
+            primary: "#F9F7F3",
+            accents: "#B4F461",
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+
+<!-- Body part -->
+
+<body class="font-lexend">
+  <!-- Header part with navbar -->
+  <header class="sticky top-0 bg-transparent backdrop-blur-md">
+    <div class="bg-gray-200 px-4 pt-3 pb-5 backdrop-blur-md">
+      <nav class="container mx-auto flex justify-between items-center">
+        <a href="./index.html">
+          <button
+            class="btn btn-sm md:btn-md text-base h-8 bg-accents text-black hover:bg-[rgb(139,199,61)] md:px-10 border-0 rounded-md">
+            Home
+          </button></a>
+        <div class="flex items-center gap-3">
+          <img class="w-6 md:w-8" src="./assets/logo.png" alt="Logo Of Donate for Bangladesh" />
+          <h1 class="hidden md:block font-bold text-lg">
+            Donate for Bangladesh
+          </h1>
+        </div>
+        <div class="flex items-center gap-3">
+          <img src="./assets/coin.png" alt="Coin logo" />
+          <div class="font-medium text-lg text-black/80">
+            <span id="total-balance" class="mr-1">25000</span>
+            <span>BDT</span>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="flex justify-center items-center gap-5 py-8">
+      <button id="donation-btn"
+        class="btn text-base h-8 bg-accents text-black hover:bg-[rgb(139,199,61)] px-10 border-0 rounded-md">
+        Donation
+      </button>
+      <button id="history-btn" class="btn btn-outline text-base h-8 text-black px-8 rounded-md">
+        History
+      </button>
+    </div>
+  </header>
+
+  <section class="container mx-auto px-3 md:px-8 py-4 mt-8">
+    </main>
+    <div>
+      <div class="flex items-center gap-2 justify-center md:justify-start">
+        <h1 class="font-bold text-2xl">Important FAQ</h1>
+
+      </div>
+      <div class="flex flex-col gap-4 mt-8">
+        <div class="join join-vertical w-full">
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+              What is the Document Object Model (DOM)?
+            </div>
+            <div class="collapse-content">
+              <p>
+                The Document Object Model (DOM) is a programming interface for web documents. It represents the
+                structure of HTML or XML documents as a tree of objects, allowing developers to manipulate content,
+                structure, and styling dynamically using JavaScript, making web pages interactive and responsive to user
+                input.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              How do you select an element from the DOM?
+            </div>
+            <div class="collapse-content">
+              <p>To select an element from the DOM, you can use methods like "document.getElementById()" to select by
+                ID, "document.querySelector()" to select using CSS selectors, or "document.getElementsByClassName()" and
+                "document.getElementsByTagName()" for class and tag-based selections. These methods return references to
+                the desired elements.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              What is event delegation in the context of the DOM, and why is
+              it useful?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Event delegation in the DOM is a technique where a single parent element handles events for its child
+                elements. Instead of adding event listeners to each child, the parent listens for events bubbling up. It
+                improves performance, especially with dynamic content, by reducing the number of event listeners needed.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              How do you manipulate an element's attributes and styles using
+              the DOM?
+            </div>
+            <div class="collapse-content">
+              <p>You can manipulate an element's attributes using "setAttribute()" and "removeAttribute()" methods, or
+                access them directly like "element.id" or "element.src". For styles, modify the "style" property, e.g.,
+                "element.style.color = "red"". You can also toggle classes using "classList.add()", "remove()", or
+                "toggle()".</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>

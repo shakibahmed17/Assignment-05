@@ -61,10 +61,10 @@
     </div>
     <div class="flex justify-center items-center gap-5 py-8">
       <button id="donation-btn"
-        class="btn text-base h-8 bg-accents text-black hover:bg-[rgb(139,199,61)] px-10 border-0 rounded-md">
+        class="btn text-base h-10 bg-accents text-black hover:bg-[rgb(139,199,61)] px-10 border-0 rounded-md">
         Donation
       </button>
-      <button id="history-btn" class="btn btn-outline text-base h-8 text-black px-8 rounded-md">
+      <button id="history-btn" class="btn btn-outline text-base h-10 text-black px-8 rounded-md">
         History
       </button>
     </div>
@@ -74,14 +74,15 @@
   <main class="container mx-auto px-5 md:px-10 pt-10">
     <div id="donation-container" class="flex flex-col gap-10 mb-15">
       <!-- Card-1 -->
-      <div class="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-10 shadow rounded-lg px-5 py-5 md:py-10 md:pl-5 md:pr-10">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-10 shadow rounded-lg px-5 py-5 md:py-10 md:pl-5 md:pr-10">
         <div>
           <img class="w-full md:w-11/12 mx-auto" src="./assets/noakhali.png" alt="Noakhali image" />
         </div>
         <div>
           <div class="flex">
             <p class="bg-gray-300 flex items-center gap-1 px-4 py-3 rounded-md font-semibold">
-              <img class="w-6 mr-1" src="./assets/coin.png" alt="Coin image"/>
+              <img class="w-6 mr-1" src="./assets/coin.png" alt="Coin image" />
               <span id="initialMoney1">88515</span>
               <span>BDT</span>
             </p>
@@ -201,14 +202,14 @@
         <dialog id="confirmation-message" class="modal">
           <div class="modal-box flex flex-col justify-center items-center gap-4">
             <h3 class="text-3xl font-bold">Congrates!</h3>
-            <img src="./assets/coin.png" alt="Coin image" />
+            <img src="./assets/coin.png" alt="" />
             <p class="text-center">
               You Have Donated for Humankind
               <span class="block font-semibold text-lg mt-2">Successfully</span>
             </p>
             <div class="modal-action">
               <form method="dialog">
-                <!-- This button for closing Modal -->
+                <!-- modal close button -->
                 <button class="btn">Close Confirmation</button>
               </form>
             </div>
